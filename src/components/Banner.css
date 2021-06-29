@@ -1,0 +1,69 @@
+.bannerWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.overlayWrapper {
+  height: 300px;
+  width: 100%;
+  background: linear-gradient(
+    90.05deg,
+    rgba(0, 0, 0, 0.6) 1.88%,
+    rgba(0, 0, 0, 0.6) 97.97%
+  );
+  display: flex;
+  align-items: center;
+}
+.overlay {
+  max-width: 1200px;
+  color: white;
+  margin: auto;
+  font-family: "MuseoModerno";
+  text-align: center;
+}
+.overlay h1 {
+  font-size: 34px;
+  padding-bottom: 3px;
+}
+.overlay h2 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+  .bannerWrapper {
+    position: absolute;
+    background-position-y: unset;
+    top: 0;
+    left: 0;
+    height: 180px;
+    border-radius: 0 0 25px 25px;
+  }
+  .overlayWrapper {
+    height: 180px;
+    width: 100%;
+    background: linear-gradient(
+      90.05deg,
+      rgba(0, 0, 0, 0.6) 1.88%,
+      rgba(0, 0, 0, 0.6) 97.97%
+    );
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 25px 25px;
+  }
+  .overlay {
+    color: white;
+    margin: 0 20px;
+    font-family: "MuseoModerno";
+    text-align: unset;
+  }
+  .overlay h1 {
+    font-size: 24px;
+    padding-bottom: 3px;
+  }
+  .overlay h2 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}

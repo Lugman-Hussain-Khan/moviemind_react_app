@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  color: white;
+}
+@media only screen and(max-width: 600px) {
+  .container {
+    margin: 0px 20px;
+    color: white;
+  }
+}
